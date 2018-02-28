@@ -72,6 +72,6 @@
     document.getElementById("iphoneX-64g-salePrice").innerHTML = iphoneXsmall64GsalePrice.toFixed(0);
     document.getElementById("iphoneX-256g-salePrice").innerHTML = iphoneXlarge256GsalePrice.toFixed(0);
 
-	document.getElementById("rate").innerHTML = "今日港元兑人民币汇率为：" + currencyRate;
+	document.getElementById("rate").innerHTML = "今日港元兑人民币汇率为：<strong>" + currencyRate + "</strong>";
 
 	};

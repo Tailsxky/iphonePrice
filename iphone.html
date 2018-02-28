@@ -1,44 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-
+	<title>iPhone</title>
+	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="css/iphone.css">
 </head>
 <body>
+	<header>
+		<div class="ui inverted menu">
+			<a class="item"><img src="https://www.apple.com/ac/globalnav/3/en_US/images/globalnav/apple/image_large.svg" /></a>
+		</div>
+	</header>
 
-<p><input type="button" onclick="checkPrice()" value="checkPrice"></p> 
-
-<div>
-<p>iPhone 8</p>
-
-	<p><span>64GB: 官方价 HKD </span> <span id="iphone8-64g-applePrice"></span> <span> 代购价 RMB </span><span id="iphone8-64g-salePrice"></span></p>
-
-	<p><span>256GB: 官方价 HKD </span> <span id="iphone8-256g-applePrice"></span> <span> 代购价 RMB </span><span id="iphone8-256g-salePrice"></span></p>
-</div>
-
-<div>
-<p>iPhone 8 Plus</p>
-
-	<p><span>64GB: 官方价 HKD </span> <span id="iphone8P-64g-applePrice"></span> <span> 代购价 RMB </span><span id="iphone8P-64g-salePrice"></span></p>
-
-	<p><span>256GB: 官方价 HKD </span> <span id="iphone8P-256g-applePrice"></span> <span> 代购价 RMB </span><span id="iphone8P-256g-salePrice"></span></p>
-</div>
-
-<div>
-<p>iPhone X</p>
-
-	<p><span>64GB: 官方价 HKD </span> <span id="iphoneX-64g-applePrice"></span> <span> 代购价 RMB </span><span id="iphoneX-64g-salePrice"></span></p>
-
-	<p><span>256GB: 官方价 HKD </span> <span id="iphoneX-256g-applePrice"></span> <span> 代购价 RMB </span><span id="iphoneX-256g-salePrice"></span></p>
-</div>
+	<div class="ui container">
+		<div class="row">
+		<div class="ui text">
+			<img class="wechat left floated" src="images/wechat.jpg" />
+			<h1 class="title">小向苹果询价<br>扫一扫加微信</h1>
+		</div>
+		</div>
 	
+		<div class="row">
 
-<p id = "rate"></p>	
+<p><input type="button" onclick="checkPrice()" value="Check Price" class="ui black button"></p> 
+
+<div class="ui cards">
+<div class="card">
+		<div class="image small">
+		  <img src="images/iphone-x-select-2017.png">
+		</div>
+		<div class="content">
+		  <a class="header" href="https://www.apple.com/hk-zh/shop/buy-iphone/iphone-x#00">iPhoneX</a>
+		  <div class="description">
+				<p><span>64GB: <i class="hk flag" title="官方价"></i> <span id="iphoneX-64g-applePrice"></span>HKD </span> / <span><i class="cn flag" title="代购价"></i> <span id="iphoneX-64g-salePrice"></span>RMB </span></p>
+				<p><span>256GB: <i class="hk flag" title="官方价"></i> <span id="iphoneX-256g-applePrice"></span>HKD </span> / <span><i class="cn flag" title="代购价"></i> <span id="iphoneX-256g-salePrice"></span>RMB </span></p>
+		  </div>
+		</div>
+	  </div>
+
+	<div class="card">
+				<div class="image small">
+				  <img src="images/iphone8-select-2017.png">
+				</div>
+				<div class="content">
+				  <a class="header" href="https://www.apple.com/hk-zh/shop/buy-iphone/iphone-8#">iPhone 8</a>
+				  <div class="description">
+						<p><span>64GB: <i class="hk flag" title="官方价"></i> <span id="iphone8-64g-applePrice"></span>HKD </span> / <span><i class="cn flag" title="代购价"></i> <span id="iphone8-64g-salePrice"></span>RMB </span></p>
+						<p><span>256GB: <i class="hk flag" title="官方价"></i> <span id="iphone8-256g-applePrice"></span>HKD </span> / <span><i class="cn flag" title="代购价"></i> <span id="iphone8-256g-salePrice"></span>RMB </span></p>
+				  </div>
+				</div>
+			  </div>
+
+	<div class="card">
+					<div class="image small">
+					  <img src="images/iphone8-plus-select-2017.png">
+					</div>
+					<div class="content">
+					  <a class="header" href="https://www.apple.com/hk-zh/shop/buy-iphone/iphone-8#01">iPhone 8 Plus</a>
+					  <div class="description">
+							<p><span>64GB: <i class="hk flag" title="官方价"></i> <span id="iphone8P-64g-applePrice"></span>HKD </span> / <span><i class="cn flag" title="代购价"></i> <span id="iphone8P-64g-salePrice"></span>RMB </span></p>
+							<p><span>256GB: <i class="hk flag" title="官方价"></i> <span id="iphone8P-256g-applePrice"></span>HKD </span> / <span><i class="cn flag" title="代购价"></i> <span id="iphone8P-256g-salePrice"></span>RMB </span></p>
+					  </div>
+					</div>
+				  </div>	
+	</div>
+<p id = "rate"><strong></strong></p>
+</div>
+</div>
+
+<footer>
+	<div class="ui center aligned container">build by <a href="https://github.com/Tailsxky">Tails</a></div>
+</footer>
 
 	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
  	<script type="text/javascript" src="js/money.min.js"></script>
-	<script type="text/javascript" src="js/currency.js"></script>
+	<script type="text/javascript" src="js/currency_compressed.js"></script>
+	<script src="semantic/dist/semantic.min.js"></script>
 	
 </body>
 </html>
