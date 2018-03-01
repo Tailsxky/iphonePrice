@@ -1,29 +1,28 @@
-header {
+nav {
     background-color: black;
     margin-bottom: 1em;
 }
 
 .card img {
     padding: 5px;
-    max-height: 300px;
-}
-
-
-.cards div {
-    margin: 0 auto; 
+    width: auto !important;
+    max-width:100%; 
+    max-height:300px;
+    margin: 0 auto;
 }
 
 .wechat {
     max-width: 20%;
-    min-width: 18%;
+    min-width: 20%;
 }
 
-.row {
-    margin-bottom: 1em;
-}
 
 .title {
     display: inline-block;
     margin-left: 1em;
     
+}
+
+.ui.container h1 {
+    margin-bottom: 1em;
 }
